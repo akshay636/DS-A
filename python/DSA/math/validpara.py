@@ -17,4 +17,4 @@ def validParans(str):
         return False
   return len(stack)==0
 
-print(validParans('()]{}'))
+print(validParans('()[]{a-b}'))
