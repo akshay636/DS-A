@@ -11,6 +11,13 @@ function fabonacci(n){ //without recursion
 }
 console.log(fabonacci(5))
 
-function FaboWithRec(n){
-
+function fiboWithRec(n){
+if(n<2){
+  return n
+}else{
+  return fiboWithRec(n-1)+fiboWithRec(n-2)
+}
+}
+for(let i=0; i<5; i++){
+  console.log(fiboWithRec(i))
 }
